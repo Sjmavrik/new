@@ -22,6 +22,6 @@ class ViewController: NSViewController {
         }
     }
 
-//paiben12
+//artem
 }
 
