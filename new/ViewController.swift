@@ -19,5 +19,23 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBOutlet weak var BtnCEoutlet: NSButton!
+    @IBAction func btnActionCE(_ sender: NSButton) {
+    }
+    
+    @IBOutlet weak var BtnOutlet1: NSButton!
+    @IBAction func BtnAction1(_ sender: NSButton) {
+    }
+    
+    @IBOutlet weak var BtnOutlet2: NSButton!
+    @IBAction func BtnAction2(_ sender: NSButton) {
+    }
+    
+    @IBOutlet weak var BtnOutlet3: NSButton!
+    @IBAction func BtnAction3(_ sender: NSButton) {
+    }
+    
+    
+    
 }
 
