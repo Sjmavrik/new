@@ -6,29 +6,18 @@
 //  Copyright © 2017 Артем Тюменцев. All rights reserved.
 //
 
-import Cocoa //paibenmark versiya 3
+import Cocoa
 
 class ViewController: NSViewController {
-//comment vazhnyi
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
-        
     }
-
-//artem 12345
-//artem 123456
-    
-    
-//artem 12345egpoiweuo
-    //ertuiohg
     
 }
 
