@@ -9,7 +9,7 @@
 import Cocoa //paibenmark versiya 3
 
 class ViewController: NSViewController {
-
+//comment vazhnyi
     override func viewDidLoad() {
         super.viewDidLoad()
 
