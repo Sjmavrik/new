@@ -6,7 +6,7 @@
 //  Copyright © 2017 Артем Тюменцев. All rights reserved.
 //
 
-import Cocoa //paibenmark12
+import Cocoa //paibenmarkversiya 3
 
 class ViewController: NSViewController {
 
