@@ -6,7 +6,7 @@
 //  Copyright © 2017 Артем Тюменцев. All rights reserved.
 //
 
-import Cocoa 
+import Cocoa
 
 class ViewController: NSViewController {
 
@@ -22,6 +22,6 @@ class ViewController: NSViewController {
         }
     }
 
-
+//paiben
 }
 
