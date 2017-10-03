@@ -17,25 +17,70 @@ class ViewController: NSViewController {
         didSet {
         // Update the view, if already loaded.
         }
+        
+    }
+    var arg1 = 0.0, arg2 = 0.0, ravno = 0.0
+    var matdey:oper?
+    enum oper {
+        case plus
+        case minus
+        case umn
+        case del
+        case stepen
     }
     
-    @IBOutlet weak var BtnCEoutlet: NSButton!
-    @IBAction func btnActionCE(_ sender: NSButton) {
-    }
-    
-    @IBOutlet weak var BtnOutlet1: NSButton!
-    @IBAction func BtnAction1(_ sender: NSButton) {
-    }
-    
-    @IBOutlet weak var BtnOutlet2: NSButton!
-    @IBAction func BtnAction2(_ sender: NSButton) {
-    }
-    
-    @IBOutlet weak var BtnOutlet3: NSButton!
-    @IBAction func BtnAction3(_ sender: NSButton) {
-    }
-    
-    
-    
-}
+    @IBOutlet weak var TitleOutlet: NSTextField!
 
+    @IBAction func buttnpers (sender:NSButton) {
+        TitleOutlet.stringValue += sender.title
+            arg1 = Double(TitleOutlet.stringValue)!
+    }
+    func raschet (a1:Double, d:oper, a2:Double) -> Double {
+        switch d {
+        case .plus: return a1 + a2
+        case .minus: return a1 - a2
+        case .umn: return a1 * a2
+        case .del: return a1 / a2
+        case .stepen: return pow(a1, a2)
+        }
+    }
+    @IBAction func zhmiknopky (sender:NSButton) {
+        TitleOutlet.stringValue = ""
+        TitleOutlet.placeholderString = String(arg1)
+        if matdey != nil {
+            TitleOutlet.stringValue = String (raschet(a1: arg2, d: matdey!, a2: arg1))
+            arg1 = Double (TitleOutlet.stringValue)!
+        }
+        arg2 = arg1
+        
+        if sender.title == "+" {
+            matdey = .plus
+        }
+        else if sender.title == "-" {
+            matdey = .minus
+        }
+        else if sender.title == "*" {
+            matdey = .umn
+        }
+        else if sender.title == "/" {
+            matdey = .del
+        }
+        else if sender.title == "x²" {
+            matdey = .stepen
+        }
+    }
+    @IBAction func procent (sender:NSButton) {
+        
+    }
+    @IBAction func ravn (sender:NSButton) {
+    TitleOutlet.stringValue = String (raschet(a1: arg2, d: matdey!, a2: arg1))
+     arg1 = Double (TitleOutlet.stringValue)!
+    }
+    @IBAction func cl (sender:NSButton) {
+        arg1 = 0
+        arg2 = 0
+        matdey = nil
+        TitleOutlet.stringValue = ""
+        TitleOutlet.placeholderString = "0"
+    }
+}

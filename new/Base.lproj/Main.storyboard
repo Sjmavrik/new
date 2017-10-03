@@ -713,7 +713,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Zr-UeE">
                                 <rect key="frame" x="52" y="308" width="346" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0" id="CE2-Z3-MS9">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" placeholderString="0" id="CE2-Z3-MS9">
                                     <font key="font" size="21" name="HiraMinPro-W6"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -727,7 +727,7 @@
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="btnActionCE:" target="XfG-lQ-9wD" id="P5o-Ya-tUR"/>
+                                    <action selector="clWithSender:" target="XfG-lQ-9wD" id="gxz-kY-xRM"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1w-H5-acd">
@@ -737,6 +737,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="04B-J5-Zw6"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RZ-Os-PAg">
                                 <rect key="frame" x="50" y="106" width="50" height="50"/>
@@ -745,6 +748,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="BIT-vl-7ZA"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-U7-aj8">
                                 <rect key="frame" x="110" y="46" width="50" height="50"/>
@@ -754,7 +760,7 @@
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="BtnAction2:" target="XfG-lQ-9wD" id="i9U-th-GEl"/>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="3vF-Nn-F9g"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hW1-E4-Ph5">
@@ -764,6 +770,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="BMp-Wc-uc5"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-EM-NZR">
                                 <rect key="frame" x="110" y="166" width="50" height="50"/>
@@ -772,6 +781,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="u09-dp-YNG"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Yq-l6-fNE">
                                 <rect key="frame" x="170" y="106" width="50" height="50"/>
@@ -780,6 +792,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="83f-wJ-nDU"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ir-Ef-Ned">
                                 <rect key="frame" x="170" y="46" width="50" height="50"/>
@@ -789,7 +804,7 @@
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="BtnAction3:" target="XfG-lQ-9wD" id="dYq-SI-8C2"/>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="ORT-Zi-wuf"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zee-Ve-U9L">
@@ -800,7 +815,7 @@
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="BtnAction1:" target="XfG-lQ-9wD" id="kf1-Q5-fI8"/>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="FoM-Cr-6EL"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GUd-u0-7TC">
@@ -810,6 +825,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMinPro-W3"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="Mk7-bs-QpI"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2i-R1-hud">
                                 <rect key="frame" x="290" y="46" width="50" height="50"/>
@@ -826,6 +844,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="YJI-If-VOB"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fqp-JC-qDh">
                                 <rect key="frame" x="290" y="106" width="50" height="50"/>
@@ -834,6 +855,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="9GS-Ha-Vc7"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdF-3y-Rkd">
                                 <rect key="frame" x="290" y="166" width="50" height="50"/>
@@ -842,6 +866,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="isQ-tx-ffi"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mPg-UO-Zxj">
                                 <rect key="frame" x="230" y="166" width="50" height="50"/>
@@ -866,6 +893,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="5zv-MM-Cmb"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHs-im-wdO">
                                 <rect key="frame" x="350" y="46" width="50" height="50"/>
@@ -874,6 +904,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="ravnWithSender:" target="XfG-lQ-9wD" id="d5w-Hm-q31"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTl-bK-NYW">
                                 <rect key="frame" x="110" y="226" width="52" height="50"/>
@@ -890,6 +923,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="procentWithSender:" target="XfG-lQ-9wD" id="kth-iz-g9o"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3x-m5-gAB">
                                 <rect key="frame" x="350" y="106" width="52" height="50"/>
@@ -898,6 +934,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="zGF-NP-2Dp"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDm-ip-GAW">
                                 <rect key="frame" x="290" y="226" width="52" height="50"/>
@@ -906,6 +945,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="SO3-lC-FAi"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
@@ -916,6 +958,7 @@
                         <outlet property="BtnOutlet1" destination="Zee-Ve-U9L" id="IWN-yV-zgp"/>
                         <outlet property="BtnOutlet2" destination="SFf-U7-aj8" id="bpj-mh-LUV"/>
                         <outlet property="BtnOutlet3" destination="9Ir-Ef-Ned" id="R8x-za-dlU"/>
+                        <outlet property="TitleOutlet" destination="DMR-Zr-UeE" id="sdo-Mw-YoN"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
