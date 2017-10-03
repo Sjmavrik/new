@@ -33,7 +33,6 @@ class ViewController: NSViewController {
 
     @IBAction func buttnpers (sender:NSButton) {
         TitleOutlet.stringValue += sender.title
-            arg1 = Double(TitleOutlet.stringValue)!
     }
     func raschet (a1:Double, d:oper, a2:Double) -> Double {
         switch d {
@@ -45,14 +44,16 @@ class ViewController: NSViewController {
         }
     }
     @IBAction func zhmiknopky (sender:NSButton) {
-        TitleOutlet.stringValue = ""
-        TitleOutlet.placeholderString = String(arg1)
-        if matdey != nil {
-            TitleOutlet.stringValue = String (raschet(a1: arg2, d: matdey!, a2: arg1))
-            arg1 = Double (TitleOutlet.stringValue)!
+        if matdey == nil {arg1 = Double(TitleOutlet.stringValue)!
+            TitleOutlet.placeholderString = String(arg1)
+            TitleOutlet.stringValue = ""
         }
-        arg2 = arg1
-        
+        else if TitleOutlet.stringValue != "" {arg2 = Double(TitleOutlet.stringValue)!
+            TitleOutlet.stringValue = String (raschet(a1: arg1, d: matdey!, a2: arg2))
+            TitleOutlet.placeholderString = TitleOutlet.stringValue
+            arg1 = Double(TitleOutlet.stringValue)!
+            TitleOutlet.stringValue = ""
+        }
         if sender.title == "+" {
             matdey = .plus
         }
@@ -71,10 +72,6 @@ class ViewController: NSViewController {
     }
     @IBAction func procent (sender:NSButton) {
         
-    }
-    @IBAction func ravn (sender:NSButton) {
-    TitleOutlet.stringValue = String (raschet(a1: arg2, d: matdey!, a2: arg1))
-     arg1 = Double (TitleOutlet.stringValue)!
     }
     @IBAction func cl (sender:NSButton) {
         arg1 = 0

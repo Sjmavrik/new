@@ -905,7 +905,7 @@
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="ravnWithSender:" target="XfG-lQ-9wD" id="d5w-Hm-q31"/>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="qhe-fd-yGc"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTl-bK-NYW">
