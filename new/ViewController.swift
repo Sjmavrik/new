@@ -46,12 +46,17 @@ class ViewController: NSViewController {
         }
     }
     @IBAction func zhmiknopky (sender:NSButton) {
-        if matdey == nil && TitleOutlet.stringValue != "" {arg1 = Double(TitleOutlet.stringValue)!
-            TitleOutlet.placeholderString = String(arg1)
+        if matdey == nil && TitleOutlet.stringValue != "" {
+            arg1 = Double(TitleOutlet.stringValue)!
+            if remainder(arg1, 1) == 0 {TitleOutlet.placeholderString = String (Int (arg1))}
+            else {TitleOutlet.placeholderString = String (arg1)}
             TitleOutlet.stringValue = ""
         }
-        else if TitleOutlet.stringValue != "" {arg2 = Double(TitleOutlet.stringValue)!
-            TitleOutlet.stringValue = String (raschet(a1: arg1, d: matdey!, a2: arg2))
+        else if TitleOutlet.stringValue != "" {
+            arg2 = Double(TitleOutlet.stringValue)!
+            ravno = raschet(a1: arg1, d: matdey!, a2: arg2)
+            if remainder(ravno, 1) == 0 {TitleOutlet.stringValue = String (Int (ravno))}
+            else {TitleOutlet.stringValue = String (ravno)}
             TitleOutlet.placeholderString = TitleOutlet.stringValue
             arg1 = Double(TitleOutlet.stringValue)!
             TitleOutlet.stringValue = ""
