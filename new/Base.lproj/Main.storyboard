@@ -888,6 +888,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="20"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="3A6-Ve-esL"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4c-YD-tUg">
                                 <rect key="frame" x="350" y="166" width="50" height="50"/>

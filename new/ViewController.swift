@@ -27,6 +27,7 @@ class ViewController: NSViewController {
         case umn
         case del
         case stepen
+        case koren
     }
     
     @IBOutlet weak var TitleOutlet: NSTextField!
@@ -41,10 +42,11 @@ class ViewController: NSViewController {
         case .umn: return a1 * a2
         case .del: return a1 / a2
         case .stepen: return pow(a1, a2)
+        case .koren: return pow(a1, 1 / a2)
         }
     }
     @IBAction func zhmiknopky (sender:NSButton) {
-        if matdey == nil {arg1 = Double(TitleOutlet.stringValue)!
+        if matdey == nil && TitleOutlet.stringValue != "" {arg1 = Double(TitleOutlet.stringValue)!
             TitleOutlet.placeholderString = String(arg1)
             TitleOutlet.stringValue = ""
         }
@@ -68,6 +70,12 @@ class ViewController: NSViewController {
         }
         else if sender.title == "x²" {
             matdey = .stepen
+        }
+        else if sender.title == "√" {
+            matdey = .koren
+        }
+        else {
+            matdey = nil
         }
     }
     @IBAction func procent (sender:NSButton) {
