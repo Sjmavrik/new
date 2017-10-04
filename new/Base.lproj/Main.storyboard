@@ -836,6 +836,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="wmV-fm-7og"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzK-XK-A22">
                                 <rect key="frame" x="170" y="166" width="50" height="50"/>
