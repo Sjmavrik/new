@@ -42,7 +42,7 @@ class ViewController: NSViewController {
         case .umn: return a1 * a2
         case .del: return a1 / a2
         case .stepen: return pow(a1, a2)
-        case .koren: return pow(a1, 1 / a2)
+        case .koren: return pow(a1, 1 / a2)            
         }
     }
     @IBAction func zhmiknopky (sender:NSButton) {
