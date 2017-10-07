@@ -48,14 +48,14 @@ class ViewController: NSViewController {
     @IBAction func zhmiknopky (sender:NSButton) {
         if matdey == nil && TitleOutlet.stringValue != "" {
             arg1 = Double(TitleOutlet.stringValue)!
-            if remainder(arg1, 1) == 0 {TitleOutlet.placeholderString = String (Int (arg1))}
+            if String (arg1).suffix(2) == ".0" {TitleOutlet.placeholderString = String (String (arg1).dropLast(2))}
             else {TitleOutlet.placeholderString = String (arg1)}
             TitleOutlet.stringValue = ""
         }
         else if TitleOutlet.stringValue != "" {
             arg2 = Double(TitleOutlet.stringValue)!
             ravno = raschet(a1: arg1, d: matdey!, a2: arg2)
-            if remainder(ravno, 1) == 0 {TitleOutlet.stringValue = String (Int (ravno))}
+            if String (ravno).suffix(2) == ".0" {TitleOutlet.stringValue = String (String (ravno).dropLast(2))}
             else {TitleOutlet.stringValue = String (ravno)}
             TitleOutlet.placeholderString = TitleOutlet.stringValue
             arg1 = Double(TitleOutlet.stringValue)!
