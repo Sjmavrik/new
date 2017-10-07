@@ -85,6 +85,15 @@ class ViewController: NSViewController {
     @IBAction func procent (sender:NSButton) {
         
     }
+    
+    @IBAction func plusminus (sender:NSButton) {
+        if TitleOutlet.stringValue.prefix(1) == "-" {
+            TitleOutlet.stringValue = String (TitleOutlet.stringValue.dropFirst(1))
+        } else {
+            TitleOutlet.stringValue = "-"+(TitleOutlet.stringValue)
+        }
+    }
+    
     @IBAction func cl (sender:NSButton) {
         arg1 = 0
         arg2 = 0
