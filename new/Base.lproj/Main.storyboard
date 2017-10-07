@@ -725,6 +725,7 @@
                                 <buttonCell key="cell" type="bevel" title="CE" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ozI-Ku-YIc">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">c</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="clWithSender:" target="XfG-lQ-9wD" id="gxz-kY-xRM"/>
@@ -736,6 +737,7 @@
                                 <buttonCell key="cell" type="bevel" title="7" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N8M-B9-vN6">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">7</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="04B-J5-Zw6"/>
@@ -747,6 +749,7 @@
                                 <buttonCell key="cell" type="bevel" title="6" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qtn-PT-ow0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">6</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="BIT-vl-7ZA"/>
@@ -758,6 +761,7 @@
                                 <buttonCell key="cell" type="bevel" title="2" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iFL-xs-Qgn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">2</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="3vF-Nn-F9g"/>
@@ -769,6 +773,7 @@
                                 <buttonCell key="cell" type="bevel" title="5" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3NP-pS-8ND">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">5</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="BMp-Wc-uc5"/>
@@ -780,6 +785,7 @@
                                 <buttonCell key="cell" type="bevel" title="8" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jme-GT-BPa">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">8</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="u09-dp-YNG"/>
@@ -791,6 +797,7 @@
                                 <buttonCell key="cell" type="bevel" title="4" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qal-Yz-PVy">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">4</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="83f-wJ-nDU"/>
@@ -802,6 +809,7 @@
                                 <buttonCell key="cell" type="bevel" title="3" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="20g-Ns-pAV">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">3</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="ORT-Zi-wuf"/>
@@ -813,6 +821,7 @@
                                 <buttonCell key="cell" type="bevel" title="1" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" inset="2" id="dGH-Nk-byJ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">1</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="FoM-Cr-6EL"/>
@@ -824,6 +833,7 @@
                                 <buttonCell key="cell" type="bevel" title="0" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z2P-gX-J0u">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMinPro-W3"/>
+                                    <string key="keyEquivalent">0</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="Mk7-bs-QpI"/>
@@ -835,6 +845,7 @@
                                 <buttonCell key="cell" type="bevel" title="." bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="42G-dF-mpq">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">.</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="wmV-fm-7og"/>
@@ -846,6 +857,7 @@
                                 <buttonCell key="cell" type="bevel" title="9" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cBY-1z-PL2">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">9</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="YJI-If-VOB"/>
@@ -857,6 +869,8 @@
                                 <buttonCell key="cell" type="bevel" title="-" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Gz-Ix-QOd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">-</string>
+                                    <modifierMask key="keyEquivalentModifierMask" shift="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="9GS-Ha-Vc7"/>
@@ -868,6 +882,8 @@
                                 <buttonCell key="cell" type="bevel" title="+" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tME-EV-NMq">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">=</string>
+                                    <modifierMask key="keyEquivalentModifierMask" shift="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="isQ-tx-ffi"/>
@@ -898,6 +914,8 @@
                                 <buttonCell key="cell" type="bevel" title="*" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tGJ-pT-czw">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">8</string>
+                                    <modifierMask key="keyEquivalentModifierMask" shift="YES"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="5zv-MM-Cmb"/>
@@ -939,6 +957,7 @@
                                 <buttonCell key="cell" type="bevel" title="/" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0br-io-c2c">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <string key="keyEquivalent">/</string>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="zGF-NP-2Dp"/>
