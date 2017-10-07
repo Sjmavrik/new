@@ -961,9 +961,9 @@ DQ
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDm-ip-GAW">
                                 <rect key="frame" x="290" y="226" width="52" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" title="x²" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XRp-aI-8X1">
+                                <buttonCell key="cell" type="bevel" title="𝑥ʸ" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XRp-aI-8X1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="20" name="HiraMaruPro-W4"/>
+                                    <font key="font" size="38" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="SO3-lC-FAi"/>
