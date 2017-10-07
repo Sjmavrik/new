@@ -4,7 +4,6 @@
 //
 //  Created by Артем Тюменцев on 28.09.17.
 //  Copyright © 2017 Артем Тюменцев. All rights reserved.
-// я тут был
 
 import Cocoa
 
