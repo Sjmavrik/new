@@ -19,6 +19,7 @@ class ViewController: NSViewController {
         
     }
     var arg1 = 0.0, arg2 = 0.0, ravno = 0.0
+    var stroka:String = ""
     var matdey:oper?
     enum oper {
         case plus
@@ -27,12 +28,14 @@ class ViewController: NSViewController {
         case del
         case stepen
         case koren
+        case procent
     }
-    
     @IBOutlet weak var TitleOutlet: NSTextField!
 
     @IBAction func buttnpers (sender:NSButton) {
-        TitleOutlet.stringValue += sender.title
+        stroka += sender.title
+        TitleOutlet.stringValue = stroka
+        
     }
     func raschet (a1:Double, d:oper, a2:Double) -> Double {
         switch d {
@@ -42,23 +45,24 @@ class ViewController: NSViewController {
         case .del: return a1 / a2
         case .stepen: return pow(a1, a2)
         case .koren: if a1 < 0 && abs(remainder(a2, 2)) == 1 {return -pow(-a1, 1 / a2)} else {return pow(a1, 1 / a2)}
+        case .procent: return (a1/100)*a2
         }
     }
     @IBAction func zhmiknopky (sender:NSButton) {
-        if matdey == nil && TitleOutlet.stringValue != "" {
-            arg1 = Double(TitleOutlet.stringValue)!
-            if String (arg1).suffix(2) == ".0" {TitleOutlet.placeholderString = String (String (arg1).dropLast(2))}
-            else {TitleOutlet.placeholderString = String (arg1)}
-            TitleOutlet.stringValue = ""
+        if matdey == nil && stroka != "" {
+            arg1 = Double(stroka)!
+            if String (arg1).suffix(2) == ".0" {TitleOutlet.stringValue = String (String (arg1).dropLast(2))}
+            else {TitleOutlet.stringValue = String (arg1)}
+            stroka = ""
         }
-        else if TitleOutlet.stringValue != "" {
-            arg2 = Double(TitleOutlet.stringValue)!
+        else if stroka != "" {
+            arg2 = Double(stroka)!
             ravno = raschet(a1: arg1, d: matdey!, a2: arg2)
-            if String (ravno).suffix(2) == ".0" {TitleOutlet.stringValue = String (String (ravno).dropLast(2))}
-            else {TitleOutlet.stringValue = String (ravno)}
-            TitleOutlet.placeholderString = TitleOutlet.stringValue
-            arg1 = Double(TitleOutlet.stringValue)!
-            TitleOutlet.stringValue = ""
+            if String (ravno).suffix(2) == ".0" {stroka = String (String (ravno).dropLast(2))}
+            else {stroka = String (ravno)}
+            TitleOutlet.stringValue = stroka
+            arg1 = Double(stroka)!
+            stroka = ""
         }
         if sender.title == "+" {
             matdey = .plus
@@ -72,18 +76,29 @@ class ViewController: NSViewController {
         else if sender.title == "/" {
             matdey = .del
         }
-        else if sender.title == "x²" {
+        else if sender.title == "𝑥ʸ" {
             matdey = .stepen
         }
-        else if sender.title == "√" {
+        else if sender.title == "ʸ√𝑥" {
             matdey = .koren
+        }
+        else if sender.title == "%" {
+            matdey = .procent
         }
         else {
             matdey = nil
         }
     }
-    @IBAction func procent (sender:NSButton) {
-        
+    @IBAction func tochka (sender:NSButton) {
+        if !TitleOutlet.stringValue.contains(".") {
+            if TitleOutlet.stringValue != "" {
+                TitleOutlet.stringValue += sender.title
+            }
+            else {
+                TitleOutlet.stringValue = "0"+sender.title
+            }
+        }
+      stroka = TitleOutlet.stringValue
     }
     
     @IBAction func plusminus (sender:NSButton) {
@@ -92,13 +107,14 @@ class ViewController: NSViewController {
         } else {
             TitleOutlet.stringValue = "-"+(TitleOutlet.stringValue)
         }
+        stroka = TitleOutlet.stringValue
     }
     
     @IBAction func cl (sender:NSButton) {
         arg1 = 0
         arg2 = 0
         matdey = nil
-        TitleOutlet.stringValue = ""
-        TitleOutlet.placeholderString = "0"
+        stroka = ""
+        TitleOutlet.stringValue = "0"
     }
 }

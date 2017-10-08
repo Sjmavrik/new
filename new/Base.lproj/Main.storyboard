@@ -713,13 +713,13 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Zr-UeE">
                                 <rect key="frame" x="52" y="308" width="346" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" placeholderString="0" id="CE2-Z3-MS9">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" title="0" id="CE2-Z3-MS9">
                                     <font key="font" size="21" name="HiraMinPro-W6"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbY-ns-Tjz">
+                            <button toolTip="Сброс значений" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbY-ns-Tjz">
                                 <rect key="frame" x="49" y="226" width="52" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="bevel" title="CE" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ozI-Ku-YIc">
@@ -848,7 +848,7 @@
                                     <string key="keyEquivalent">.</string>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="buttnpersWithSender:" target="XfG-lQ-9wD" id="wmV-fm-7og"/>
+                                    <action selector="tochkaWithSender:" target="XfG-lQ-9wD" id="uzu-BF-LD7"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzK-XK-A22">
@@ -889,12 +889,12 @@
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="isQ-tx-ffi"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BnP-wt-w4x">
+                            <button toolTip="корень у степени из х" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BnP-wt-w4x">
                                 <rect key="frame" x="170" y="226" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" title="√" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mwu-Wt-59t">
+                                <buttonCell key="cell" type="bevel" title="ʸ√𝑥" bezelStyle="regularSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mwu-Wt-59t">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" size="18" name=".AppleSystemUIFont"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="3A6-Ve-esL"/>
@@ -943,7 +943,7 @@ DQ
                                     <font key="font" size="20" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="procentWithSender:" target="XfG-lQ-9wD" id="kth-iz-g9o"/>
+                                    <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="rDQ-E0-9cu"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3x-m5-gAB">
@@ -961,9 +961,9 @@ DQ
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDm-ip-GAW">
                                 <rect key="frame" x="290" y="226" width="52" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" title="𝑥ʸ" bezelStyle="regularSquare" imagePosition="right" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XRp-aI-8X1">
+                                <buttonCell key="cell" type="bevel" title="𝑥ʸ" bezelStyle="regularSquare" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XRp-aI-8X1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="38" name="HiraMaruPro-W4"/>
+                                    <font key="font" size="25" name="HiraMaruPro-W4"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="zhmiknopkyWithSender:" target="XfG-lQ-9wD" id="SO3-lC-FAi"/>
@@ -985,11 +985,11 @@ DQ
                     <connections>
                         <outlet property="BntAction3" destination="9Ir-Ef-Ned" id="zXK-ab-j76"/>
                         <outlet property="Btn1outlet" destination="Zee-Ve-U9L" id="imf-Ai-nYO"/>
-                        <outlet property="BtnCEoutlet" destination="PbY-ns-Tjz" id="OJk-w1-00y"/>
                         <outlet property="BtnOutlet1" destination="Zee-Ve-U9L" id="IWN-yV-zgp"/>
                         <outlet property="BtnOutlet2" destination="SFf-U7-aj8" id="bpj-mh-LUV"/>
                         <outlet property="BtnOutlet3" destination="9Ir-Ef-Ned" id="R8x-za-dlU"/>
                         <outlet property="TitleOutlet" destination="DMR-Zr-UeE" id="sdo-Mw-YoN"/>
+                        <outlet property="ce" destination="PbY-ns-Tjz" id="cjm-eK-7Yx"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
