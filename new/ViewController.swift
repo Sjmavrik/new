@@ -31,7 +31,7 @@ class ViewController: NSViewController {
         case procent
     }
     @IBOutlet weak var TitleOutlet: NSTextField!
-
+    @IBOutlet weak var LabelOutlet: NSTextField!
     @IBAction func buttnpers (sender:NSButton) {
         stroka += sender.title
         TitleOutlet.stringValue = stroka
@@ -117,4 +117,19 @@ class ViewController: NSViewController {
         stroka = ""
         TitleOutlet.stringValue = "0"
     }
+    var key = false
+    var save = ""
+    @IBAction func save(sender:NSButton) {
+        if key == false {
+            save = TitleOutlet.stringValue
+            LabelOutlet.stringValue = "Число в памяти: " + save
+            key = true
+        }
+        else {
+            stroka = save
+            TitleOutlet.stringValue = stroka
+        }
+        
+    }
+    
 }
