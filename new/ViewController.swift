@@ -131,5 +131,10 @@ class ViewController: NSViewController {
         }
         
     }
-    
+    @IBAction func cleansave (sender:NSButton) {
+        key = false
+        save = ""
+        LabelOutlet.stringValue = ""
+    }
+
 }
